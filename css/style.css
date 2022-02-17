@@ -1,0 +1,301 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+}
+body {
+    
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: #f4f4f4;
+    line-height: 1.6;
+    background-color: #373737;
+    
+     }
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    padding-top: 1%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.inner{
+
+    display: flex;
+    align-items: center;
+    
+}
+.start_nav{
+   margin-left: 40%;   
+}
+.logo{
+    font-family: Montserrat, 'Open Sans',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+
+/*nav*/
+
+.navi{
+    letter-spacing: 3px;
+    text-decoration: none; 
+    color: #f4f4f4;
+    margin: 0 15;
+    position: relative;
+
+    vertical-align: top; 
+    display: inline-block;
+    transition: color .1s linear;
+}
+.navi:hover{
+    color: #ffeb00;
+}
+.navi:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+.navi:hover:after,
+.navi.active:after {
+    opacity: 1;
+}
+.navi.active {
+    color: #fce38a;
+}
+
+
+/*intro*/
+
+
+.intro {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../img/apex.jpg") center no-repeat;
+    background-size: cover;
+}
+.intro_inner {
+      width: 100%;
+      max-width: 900px;
+      margin:  200 auto 0;
+      
+      text-align: center;
+}
+.team{
+    font-family: Kaushan Script, cursive;
+    letter-spacing: 0.2vw;
+    font-size: 5vw;
+    line-height: 1;
+    
+}
+.welcome{
+   font-family: Montserrat,  'Open Sans',sans-serif;
+   letter-spacing: 5px;
+   font-size: 10vw;  
+   font-weight: 700;
+   line-height: 1;
+    margin-top: 3vw;
+}
+.probel {
+    background:   #f4f4f4;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto 60px;
+    border-radius: 1px;
+}
+
+/* Button*/
+
+.btn {
+    
+    vertical-align: top;
+    padding: 8px 30px;
+    letter-spacing: 1px;
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #f4f4f4;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+.btn:hover {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+
+/*LEARN MORE*/
+
+/*intro*/
+
+.intro2 {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../img/legs.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro_inner {
+      width: 100%;
+      max-width: 1200px;
+      margin:  160 auto 0;
+      text-align: center;
+      
+}
+
+.welcome2{ 
+    font-size: 4vw;
+    font-family:  Montserrat, 'Open Sans',sans-serif; 
+    line-height: 1;
+}   
+
+.major{
+    font-size: 30;
+    font-family:  Montserrat, 'Open Sans',sans-serif;
+     letter-spacing: 1px;
+    line-height: 1;
+    margin-top: 50px;
+}    
+
+
+.social{
+    margin-top: 20;
+    width: 400px;
+    
+}
+
+.such{
+    font-size: 25;
+}
+
+
+
+/* WORK */
+
+.intro3 {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    background: url("../img/forest.jpg") center no-repeat;
+    background-size: cover;  
+   
+}
+
+
+/* Position the image container */
+
+.container3{ 
+    width: 100%;
+    max-width: 1200px;
+    margin: 150 auto 20;
+  
+    
+     border: solid 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+   
+}
+.container2 {
+   align-items: center;
+    
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: Montserrat;
+}
+
+/* CONTACT US*/
+
+
+
+.intro4{
+  
+    width: 100%;
+    height: 100vh;
+    background: url("../img/rolex.jpg") center no-repeat;
+    background-size: cover;    
+}
+
+
+
+
